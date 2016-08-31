@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: `<h1>Test Header 1</h1>
-    <app-other></app-other>
+  templateUrl: `<h1>String Interpolation</h1>
+    <app-databinding></app-databinding>
 `,
   styleUrls: ['app.component.css']
 })
