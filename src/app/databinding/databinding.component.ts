@@ -14,6 +14,10 @@ import { Component, OnInit } from '@angular/core';
     
     <p [ngClass]="{testMe: onResult()}">Is this styled?</p>
     <p [ngStyle]="{color: 'blue'}">HOW ABOUT THIS THOUGH???</p>
+    
+    <h3>Custom Property Binding</h3>
+    <app-property-binding [result]="10"></app-property-binding>
+    
 `,
   styleUrls: ['databinding.component.css']
 })
