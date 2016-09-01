@@ -18,6 +18,10 @@ import { Component, OnInit } from '@angular/core';
     <h3>Custom Property Binding</h3>
     <app-property-binding [result]="10"></app-property-binding>
     
+    <h3>Event Binding</h3>
+    <app-event-binding (clicked)="onClicked($event)"></app-event-binding>
+    
+    
 `,
   styleUrls: ['databinding.component.css']
 })
@@ -27,6 +31,10 @@ export class DatabindingComponent implements OnInit {
 
   onResult(){
     return false;
+  }
+
+  onClicked(value: string){
+    alert(value);
   }
 
   constructor() { }
